@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <title>My List</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 20px;
+      }
+      input,
+      button {
+        padding: 5px;
+        margin: 5px;
+      }
+      ul {
+        margin-top: 20px;
+      }
+      li {
+        padding: 3px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>My Dynamic List</h2>
+
+    <input type="text" id="newthing" placeholder="Type something" />
+    <button onclick="addthing()">Add</button>
+    <button onclick="delthing()">Remove Last</button>
+
+    <ul id="listzone"></ul>
+
+    <script>
+      function addthing() {
+        let t = document.getElementById("newthing").value;
+        if (t == "") {
+          alert("Write something");
+          return;
+        }
+        let x = document.createElement("li");
+        x.innerText = t;
+        document.getElementById("listzone").appendChild(x);
+        document.getElementById("newthing").value = "";
+      }
+
+      function delthing() {
+        let y = document.getElementById("listzone");
+        if (y.children.length > 0) {
+          y.removeChild(y.lastChild);
+        } else {
+          alert("Nothing to remove");
+        }
+      }
+    </script>
+  </body>
+</html>
