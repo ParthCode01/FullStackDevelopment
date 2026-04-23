@@ -1,0 +1,35 @@
+.home { min-height: 80vh; }
+
+.hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+.hero h1 { font-size: 2.8rem; margin-bottom: 1rem; }
+.hero p { font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9; }
+
+.features { padding: 4rem 2rem; max-width: 900px; margin: 0 auto; }
+.features h2 { text-align: center; font-size: 2rem; margin-bottom: 2.5rem; }
+
+.features .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+.features .card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  text-align: center;
+}
+.features .card .icon { font-size: 2.5rem; margin-bottom: 1rem; }
+.features .card h3 { margin-bottom: 1rem; color: #2c3e50; }
+.features .card ul { list-style: none; text-align: left; }
+.features .card li { padding: 0.4rem 0; color: #555; }
+.features .card li::before { content: "✓ "; color: #27ae60; font-weight: bold; }
+
+.cta { background: #ecf0f1; padding: 3rem 2rem; text-align: center; }
+.cta h2 { margin-bottom: 1.5rem; font-size: 1.8rem; }
+
+@media (max-width: 600px) {
+  .hero h1 { font-size: 2rem; }
+  .features .cards { grid-template-columns: 1fr; }
+}

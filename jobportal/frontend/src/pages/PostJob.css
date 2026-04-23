@@ -1,0 +1,15 @@
+.post-job-page { min-height: 100vh; background: #f5f6fa; }
+
+.form-container { max-width: 800px; margin: 2rem auto; padding: 0 2rem; }
+.form-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+
+@media (max-width: 768px) {
+  .form-row { grid-template-columns: 1fr; }
+}

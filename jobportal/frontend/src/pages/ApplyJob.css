@@ -1,0 +1,34 @@
+.apply-page { min-height: 100vh; background: #f5f6fa; padding-bottom: 2rem; }
+
+.apply-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.job-info {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  height: fit-content;
+}
+.job-info h2 { margin: 0 0 0.5rem; color: #2c3e50; }
+.job-info .company { color: #7f8c8d; font-weight: 600; margin-bottom: 1rem; }
+.job-info .details { display: flex; gap: 1.5rem; margin-bottom: 1rem; color: #555; }
+.job-info .desc { color: #555; line-height: 1.6; }
+
+.form-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.form-card h3 { margin: 0 0 1.5rem; color: #2c3e50; }
+
+@media (max-width: 768px) {
+  .apply-container { grid-template-columns: 1fr; }
+}

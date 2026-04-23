@@ -1,0 +1,18 @@
+.job-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-left: 5px solid #3498db;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.job-card:hover { transform: translateY(-3px); box-shadow: 0 4px 14px rgba(0,0,0,0.12); }
+
+.job-card h3 { margin: 0 0 0.3rem; color: #2c3e50; font-size: 1.2rem; }
+.job-card .company { color: #7f8c8d; font-weight: 600; margin: 0 0 0.8rem; }
+
+.job-card .details { display: flex; gap: 1.5rem; margin-bottom: 0.8rem; color: #34495e; font-size: 0.95rem; }
+.job-card .description { color: #555; line-height: 1.5; margin-bottom: 1.2rem; font-size: 0.95rem; }
+
+.job-card .actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
